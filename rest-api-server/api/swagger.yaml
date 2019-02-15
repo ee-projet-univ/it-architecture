@@ -1,0 +1,28 @@
+---
+swagger: "2.0"
+info:
+  description: "Rest API for IT architecture"
+  version: "1.0.0"
+  title: "IT architecture REST API"
+host: "localhost:8000"
+basePath: "/v1"
+schemes:
+- "http"
+paths:
+  /hello-world:
+    post:
+      summary: "Performs hello world"
+      description: ""
+      operationId: "helloWorld"
+      parameters:
+      - in: "body"
+        name: "name"
+        description: "Name to be printed"
+        required: false
+        schema:
+          type: "string"
+      responses:
+        405:
+          description: "Invalid input"
+      x-swagger-router-controller: "Default"
+definitions: {}

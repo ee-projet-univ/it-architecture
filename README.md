@@ -136,6 +136,6 @@ Objectif : Créer un handler serverless avec un endpoint `hello-world`
     ```http
     POST /hello-world HTTP/1.1
     Host: localhost:3000
-    { "name": "emilien" }
+    { "name": "sample name" }
     ```
 - ✨ `git commit / push`

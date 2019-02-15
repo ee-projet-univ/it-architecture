@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  description: Rest API for IT architecture
+  version: 1.0.0
+  title: IT architecture REST API
+servers:
+  - url: 'http://localhost:8080/v1'
+    description: Development server
+paths:
+  /hello-world:
+    post:
+      summary: Performs hello world
+      operationId: helloWorld
+      requestBody:
+        required: true
+        x-name: data
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name to be printed
+      responses:
+        '200':
+          description: Hello response
+        '405':
+          description: Invalid input
+        default:
+          description: Unexpected error

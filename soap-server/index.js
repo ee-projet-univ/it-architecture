@@ -2,7 +2,6 @@ var myService = {
     SoapWebService: {
         SoapWebService_0: {
             HelloWorld: function (args) {
-                console.log(args);
                 return { result: 'Hello ' + args.name };
             }
         }

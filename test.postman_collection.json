@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "9c3f0386-f43c-4f58-8a1f-645895b7fe7d",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "soap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:pm=\"http://www.getpostman.com/\">\r\n <soapenv:Header></soapenv:Header>\r\n <soapenv:Body>\r\n <hs:HelloWorld>\r\n <hs:name>emilien</hs:name>\r\n </hs:HelloWorld>\r\n </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "http://localhost:8000/wsdl?wsdl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"wsdl"
+					],
+					"query": [
+						{
+							"key": "wsdl",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"emilien\" }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/hello-world",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"hello-world"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "serverless",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"emilien\" }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/hello-world",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hello-world"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

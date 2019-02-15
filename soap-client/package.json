@@ -1,7 +1,7 @@
 {
   "name": "soap-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Soap client for IT architecture",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

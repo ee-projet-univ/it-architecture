@@ -1,7 +1,7 @@
 {
   "name": "soap-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Soap server for IT architecture",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",

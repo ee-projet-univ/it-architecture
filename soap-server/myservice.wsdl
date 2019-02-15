@@ -1,0 +1,65 @@
+<!--
+ 
+it-architecture
+2019-02-15
+Soap web service for IT architecture
+
+Online WSDL 1.1 SOAP generator 0.2
+Julien Blitte
+ 
+-->
+<definitions xmlns:tns="fr.it_architecture.soap_web_service.wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsd1="fr.it_architecture.soap_web_service.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="Soap web service for IT architecture" targetNamespace="fr.it_architecture.soap_web_service.wsdl">
+ <!--  definition of datatypes  -->
+<types>
+<schema xmlns="http://www.w3.org/2000/10/XMLSchema" targetNamespace="fr.it_architecture.soap_web_service.xsd">
+<element name="name">
+<complexType>
+<all>
+<element name="value" type="string"/>
+</all>
+</complexType>
+</element>
+<element name="result">
+<complexType>
+<all>
+<element name="value" type="string"/>
+</all>
+</complexType>
+</element>
+</schema>
+</types>
+ <!--  response messages  -->
+<message name="returns_result">
+<part name="result" type="xsd:result"/>
+</message>
+ <!--  request messages  -->
+<message name="HelloWorld">
+<part name="name" type="xsd:name"/>
+</message>
+ <!--  server's services  -->
+<portType name="SOAP web service">
+<operation name="HelloWorld">
+<input message="tns:HelloWorld"/>
+<output message="tns:returns_result"/>
+</operation>
+</portType>
+ <!--  server encoding  -->
+<binding name="SOAP web service_webservices" type="tns:SOAP web service">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+<operation name="HelloWorld">
+<soap:operation soapAction="urn:xmethods-delayed-quotes#HelloWorld"/>
+<input>
+<soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+</output>
+</operation>
+</binding>
+ <!--  access to service provider  -->
+<service name="SoapWebService">
+<port name="SoapWebService_0" binding="SOAP web service_webservices">
+<soap:address location="http://localhost:8000/wsdl"/>
+</port>
+</service>
+</definitions>

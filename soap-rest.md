@@ -30,6 +30,7 @@ https://brew.sh/
 
 ##### Installation outils
 
+* Git: brew install git
 * Nodejs / Mongodb : brew install node mongodb
 * Postman : https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates/#macos-installation
 * Vscode : https://code.visualstudio.com/docs/setup/mac
@@ -40,7 +41,7 @@ https://brew.sh/
 ##### Installation nodejs
 
 ```bash
-sudo apt install curl
+sudo apt install git-all curl
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 sudo apt install nodejs
 ```
@@ -61,7 +62,7 @@ https://chocolatey.org/docs/installation
 ##### Installation outils
 
 ```shell
-choco install postman nodejs.install mongodb.install robo3t.install vscode hyper --confirm;
+choco install git postman nodejs.install mongodb.install robo3t.install vscode hyper --confirm;
 ```
 
 ### Github
@@ -79,6 +80,7 @@ Objectif : Créer une fonction `HelloWorld`
   - npm i soap
   - npm i -D nodemon
   - _package.json_ - scripts `"start"` : `"nodemon index.js"`
+  - Créer un fichier `index.js`
 
 - Librarie : "soap" (https://github.com/vpulim/node-soap)
 - Implementer le serveur SOAP et la fonction `HelloWorld` :

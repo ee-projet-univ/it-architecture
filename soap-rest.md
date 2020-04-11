@@ -79,7 +79,7 @@ Objectif : Créer une fonction `HelloWorld`
   - mkdir soap-server; cd soap-server; npm init;
   - npm i soap
   - npm i -D nodemon
-  - _package.json_ - scripts `"start"` : `"nodemon index.js"`
+  - Modifier le fichier _package.json_ - scripts et ajouter `"start"` : `"nodemon index.js"`
   - Créer un fichier `index.js`
 
 - Librarie : "soap" (https://github.com/vpulim/node-soap)

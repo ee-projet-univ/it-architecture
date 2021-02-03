@@ -3,7 +3,7 @@ info:
   description: "Rest API for IT architecture"
   version: "1.0.0"
   title: "IT architecture REST API"
-  
+
 servers:
   - url: http://localhost:8080/v1
     description: Development server
@@ -24,7 +24,7 @@ paths:
                 name:
                   type: string
                   description: "Name to be printed"
-    
+
       responses:
         200:
           description: Hello response

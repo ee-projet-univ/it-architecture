@@ -1,15 +1,15 @@
 {
-  "name": "soap-client",
+  "name": "rest-api-server",
   "version": "1.0.0",
-  "description": "Soap client for IT architecture",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "soap": "^0.31.0"
+  "devDependencies": {
+    "oas-generator": "^2.1.5"
   }
 }

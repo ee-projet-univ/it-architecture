@@ -181,7 +181,9 @@ choco install git nodejs.install postman vscode --confirm;
   - Copier la specification Open API dans le fichier `swagger.yaml`
   - Générer l'api : `npx oas-generator swagger.yaml`
 
-- Le service web rest a été généré dans les répertoire `nodejs-server-generated`: `cd nodejs-server-generated`;
+- Le service web rest a été généré dans les répertoire `nodejs-server-generated`
+- `cd nodejs-server-generated;`
+- Installation des dépendences: `npm i -D nodemon;`
 - Modifier le fichier `nodejs-server-generated/package.json` - Remplacer la commande de démarrage du serveur `"start": "nodemon index.js"` dans la section `scripts`
 
 - Implémenter la fonction "helloWorld" du service

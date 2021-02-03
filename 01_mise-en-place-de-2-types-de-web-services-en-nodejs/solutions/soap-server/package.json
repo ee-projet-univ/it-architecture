@@ -1,18 +1,19 @@
 {
   "name": "soap-server",
   "version": "1.0.0",
-  "description": "Soap server for IT architecture",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "soap": "^0.31.0"
+    "soap": "^0.36.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.7"
   }
 }

@@ -1,4 +1,4 @@
-# Architecture des sytèmes d'information (TD 1)
+# Architecture des sytèmes d'information - TD 1
 
 📢 Mise en place de 2 types de web services avec un exemple simple en nodejs :
 
@@ -15,61 +15,9 @@
 
 ## Contexte
 
-Chaque webservice à créer est une fonction "hello world" qui attend un paramètre `name` et retourne le message `Hello {{ name }}`\_
+- Chaque webservice à créer est une fonction "hello world" qui attend un paramètre `name` et retourne le message `Hello {{ name }}`
 
-👉 Pourquoi nodejs ? https://insights.stackoverflow.com/survey/2020#technology-other-frameworks-libraries-and-tools
-
-## Setup
-
-### Environnement de travail
-
-Outils obligatoires : Git, NodeJS (LTS), Exécuteur de requêtes SOAP / REST (Postman par exemple), un IDE (vscode par exemple)
-
-#### Mac OSX
-
-##### Installation Homebrew
-
-https://brew.sh/
-
-##### Installation outils
-
-- Git: brew install git
-- Nodejs : brew install node
-- Postman : https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates/#macos-installation
-- Vscode : https://code.visualstudio.com/docs/setup/mac
-
-#### Ubuntu
-
-##### Installation nodejs
-
-```bash
-sudo apt install git-all curl
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
-sudo apt install nodejs
-```
-
-##### Installation outils
-
-- Postman : https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates/#linux-installation
-- Vscode : https://code.visualstudio.com/docs/setup/linux
-
-#### Windows
-
-##### Installation chocolatey
-
-https://chocolatey.org/docs/installation
-
-##### Installation outils
-
-```shell
-choco install git nodejs.install postman vscode --confirm;
-```
-
-### Github
-
-- https://github.com/join
-- Créer un nouveau repository (pour versionner votre travail): _it-architecture_
-- `git clone`
+- 👉 Pourquoi nodejs ? https://insights.stackoverflow.com/survey/2020#technology-other-frameworks-libraries-and-tools
 
 ## Service Web SOAP
 

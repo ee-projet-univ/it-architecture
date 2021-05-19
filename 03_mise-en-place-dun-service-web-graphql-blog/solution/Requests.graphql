@@ -1,0 +1,75 @@
+# Write your query or mutation here
+mutation CreateUser {
+  createUser(user: { username: "tes1t" }) {
+    id
+    username
+    createdAt
+  }
+}
+
+query Users {
+  users {
+    id
+    username
+    createdAt
+  }
+}
+
+mutation CreateArticle {
+  createArticle(
+    article: { title: "test", body: "test", user: "602ed6d48649bfb30339f78a" }
+  ) {
+    id
+    title
+    body
+    createdAt
+  }
+}
+
+query Articles {
+  articles {
+    id
+    title
+    body
+    createdAt
+    comments {
+      id
+      body
+    }
+  }
+}
+
+query LastXCreatedArticles {
+  articles(first: 3) {
+    id
+    title
+    body
+    createdAt
+  }
+}
+
+mutation CreateComment {
+  createComment(
+    comment: {
+      body: "test"
+      user: "602ed6d48649bfb30339f78a"
+      article: "602ed760576050b4b3987a7c"
+    }
+  ) {
+    id
+    body
+    createdAt
+  }
+}
+
+query Search {
+  search(contains: "test") {
+    ... on Article {
+      title
+      body
+    }
+    ... on Comment {
+      body
+    }
+  }
+}

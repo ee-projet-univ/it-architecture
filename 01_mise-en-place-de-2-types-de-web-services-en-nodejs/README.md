@@ -125,8 +125,7 @@
 
 - Générer la specification Open API pour la fonction `HelloWorld` accessible via `/hello-world`.
 
-  - Utiliser l'éditeur https://editor.swagger.io. Documentation : https://swagger.io/docs/specification/basic-structure/
-  - Copier la specification Open API dans le fichier `swagger.yaml`
+  - Créer le fichier `swagger.yaml` pour déclarer l'API. Documentation : https://swagger.io/docs/specification/basic-structure/
   - Générer l'api : `npx oas-generator swagger.yaml`
 
 - Le service web rest a été généré dans les répertoire `nodejs-server-generated`

@@ -28,7 +28,7 @@
 ### Implémenter le serveur graphql
 
 - Implémenter le serveur GraphQL dans le fichier `index.js`. Documentation: https://graphql.org/graphql-js/running-an-express-graphql-server/
-- Démarrer le server REST: `npm start`
+- Démarrer le serveur graphql: `npm start`
 - Vérifier que l'interface GraphiQL est accessible : http://localhost:4000/graphql
 
 ### Implémenter la query `helloWorld`.

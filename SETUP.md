@@ -13,7 +13,7 @@ https://brew.sh/
 #### Installation outils
 
 - Git: brew install git
-- Nodejs : brew install node
+- Nodejs : brew install node (Si problème installer depuis https://nodejs.org)
 - Postman : brew install --cask postman
 - Vscode : https://code.visualstudio.com/docs/setup/mac
 - Mongodb : brew install mongodb

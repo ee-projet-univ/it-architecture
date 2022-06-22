@@ -50,6 +50,7 @@ https://chocolatey.org/docs/installation
 - Postman : choco install postman --confirm
 - Vscode : choco install vscode --confirm
 - Mongod : choco install mongodb.install --confirm
+  Mettre le path du répertoire bin dans les variables d'environement
 - Robot 3T : choco install robo3t.install --confirm
 
 ## Github

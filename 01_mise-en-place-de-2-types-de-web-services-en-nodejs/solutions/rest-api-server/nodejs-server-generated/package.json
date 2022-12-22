@@ -16,7 +16,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.17.3",
     "js-yaml": "^3.3.0",
-    "oas-tools": "^2.2.2"
+    "oas-tools": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

@@ -14,7 +14,7 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.20.1",
-    "express": "^4.17.3",
+    "express": "^4.19.2",
     "js-yaml": "^3.3.0",
     "oas-tools": "^3.0.0"
   },

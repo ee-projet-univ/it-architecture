@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "serverless": "^3.22.0",
+    "serverless": "^4.18.0",
     "serverless-offline": "^14.3.4"
   }
 }
